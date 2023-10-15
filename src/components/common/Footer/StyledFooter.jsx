@@ -11,18 +11,18 @@ function Footer() {
           <div>
             <h3 className="font-bold text-xl mb-4">Resources</h3>
             <ul className="list-none space-y-3">
-              <li><Link to="#" className="hover:text-gray-300">FAQ</Link></li>
-              <li><Link to="#" className="hover:text-gray-300">Shipping</Link></li>
-              <li><Link to="#" className="hover:text-gray-300">Returns</Link></li>
+              <li><span className="hover:text-gray-300 cursor-pointer">FAQ</span></li>
+              <li><span className="hover:text-gray-300 cursor-pointer">Shipping</span></li>
+              <li><span className="hover:text-gray-300 cursor-pointer">Returns</span></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-bold text-xl mb-4">Company</h3>
             <ul className="list-none space-y-3">
-              <li><Link to="#" className="hover:text-gray-300">About Us</Link></li>
+              <li><span className="hover:text-gray-300 cursor-pointer">About Us</span></li>
               <li><Link to="/contact" className="hover:text-gray-300">Contact</Link></li>
-              <li><Link to="#" className="hover:text-gray-300">Terms Of Use</Link></li>
+              <li><span className="hover:text-gray-300 cursor-pointer">Terms Of Use</span></li>
             </ul>
           </div>
 
@@ -30,19 +30,19 @@ function Footer() {
             <h3 className="font-bold text-xl mb-4">Follow Us</h3>
             <ul className="list-none space-y-3">
               <li>
-                <a href="#" className="hover:text-gray-300 flex items-center">
+                <span className="hover:text-gray-300 flex items-center cursor-pointer">
                   <FaFacebookF className="mr-2" /> Facebook
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-300 flex items-center">
+                <span className="hover:text-gray-300 flex items-center cursor-pointer">
                   <FaTwitter className="mr-2" /> Twitter
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-300 flex items-center">
+                <span className="hover:text-gray-300 flex items-center cursor-pointer">
                   <FaInstagram className="mr-2" /> Instagram
-                </a>
+                </span>
               </li>
             </ul>
           </div>
