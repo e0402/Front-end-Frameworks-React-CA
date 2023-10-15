@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Website demo (Netlify)](https://luxury-bids.netlify.app/index.html)
+- [Website demo (Netlify)](https://best-bargain.netlify.app/)
 
 ## Semester Project brief
 
