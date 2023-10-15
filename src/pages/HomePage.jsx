@@ -18,29 +18,34 @@ function Home() {
       });
   }, []);
 
-  const filteredProducts = products.filter((product) =>
-    product.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
+  const filteredProducts = products.filter((product) => {
+    const lowerCaseSearchTerm = searchTerm.toLowerCase();
+    return product.title.toLowerCase().includes(lowerCaseSearchTerm) || 
+           product.description.toLowerCase().includes(lowerCaseSearchTerm);
+  });
+  
   if (loading) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div className="mt-5 ml-5 mr-5">
-      <input 
-        className="w-full p-2 mb-4 border rounded" 
-        type="text"
-        placeholder="Search for products..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)} 
-      />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {filteredProducts.map((product) => ( 
-          <Link to={`/product/${product.id}`} key={product.id}>
-            <ProductCard product={product} />
-          </Link>
-        ))}
+    <div className="me-12 ms-12">
+      <h1 className="text-center text-6xl font-bold mt-12 mb-12">Get your bargain today!</h1>
+      <div className="mt-5 ml-5 mr-5">
+        <input 
+          className="w-full p-2 mb-10 mt-3 border rounded focus:outline-none focus:border-black focus:border-1" 
+          type="text"
+          placeholder="Search for products..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)} 
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+          {filteredProducts.map((product) => ( 
+            <Link to={`/product/${product.id}`} key={product.id}>
+              <ProductCard product={product} />
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
