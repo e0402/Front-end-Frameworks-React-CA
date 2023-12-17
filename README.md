@@ -8,11 +8,11 @@
 
 ## Semester Project brief
 
-# Goal
+## Goal
 
 To apply knowledge of React to build an eCom store.
 
-# Brief
+## Brief
 
 The API you are using for this brief is: https://api.noroff.dev/api/v1/online-shop
 
@@ -48,7 +48,7 @@ You are not required to use TypeScript.
 
 Your code is expected to be clean and well-formatted.
 
-# How to get started
+## How to get started
 
 **Clone the repo to your local computer:**
 
