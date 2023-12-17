@@ -1,5 +1,7 @@
 # Front-end frameworks course assignment
 
+![Image](public/screenshot.jpeg)
+
 ## Links
 
 - [Website demo (Netlify)](https://best-bargain.netlify.app/)
@@ -45,6 +47,8 @@ Your design should be responsive. You are welcome to use a CSS Framework, howeve
 You are not required to use TypeScript.
 
 Your code is expected to be clean and well-formatted.
+
+# How to get started
 
 **Clone the repo to your local computer:**
 
